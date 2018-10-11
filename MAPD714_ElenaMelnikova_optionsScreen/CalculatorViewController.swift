@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class CalculatorViewController: UIViewController {
     //Number displayed on screen
     
     var screenNumber:Double? = nil
