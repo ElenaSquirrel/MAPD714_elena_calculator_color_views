@@ -253,6 +253,10 @@ class CalculatorViewController: UIViewController {
                 performingMath = true
                 return
             }
+            if operation == nil {
+                operation = sender.tag
+                return
+            }
                 let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
                 if res > 99999999 || res < -99999999 || (res > 0 && res < 0.000001) || (res < 0 && res > -0.000001 ) {
                     //Set error
@@ -289,6 +293,9 @@ class CalculatorViewController: UIViewController {
                 previousNumber = screenNumber
                 //Update operation
                 performingMath = true
+            }
+            if operation == nil {
+                return
             }
             let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
             if res > 99999999 || res < -99999999 || (res > 0 && res < 0.000001) || (res < 0 && res > -0.000001 ) {
