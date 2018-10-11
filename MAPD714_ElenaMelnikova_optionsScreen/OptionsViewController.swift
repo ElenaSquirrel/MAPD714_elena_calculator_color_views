@@ -9,7 +9,51 @@
 import UIKit
 
 class OptionsViewController: UIViewController {
+    
+    //Outlet
+    @IBOutlet weak var menuOutlet: UIButton!
+    @IBOutlet var menuItemsOutlets: [UIButton]!
 
+    @IBOutlet weak var menuOutlet2: UIButton!
+
+    @IBOutlet var menuItemsOutlets2: [UIButton]!
+    
+    //Actions
+    @IBAction func menuAction(_ sender: UIButton) {
+        menuItemsOutlets.forEach {
+            (button) in UIView.animate(withDuration: 0.5, animations:{
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    @IBAction func menuItemsActions(_ sender: UIButton) {
+        menuOutlet.titleLabel?.text = sender.titleLabel?.text
+    }
+    
+    @IBAction func menuItemsActions2(_ sender: UIButton) {
+        menuOutlet2.titleLabel?.text = sender.titleLabel?.text
+    }
+    
+    @IBAction func menuAction2(_ sender: UIButton) {
+        menuItemsOutlets2.forEach {
+            (button) in UIView.animate(withDuration: 0.5, animations:{
+                button.isHidden = !button.isHidden
+                self.view.layoutIfNeeded()
+            })
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
