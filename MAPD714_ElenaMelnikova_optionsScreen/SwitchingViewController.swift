@@ -90,6 +90,9 @@ class SwitchingViewController: UIViewController {
                     case "Yellow":
                         textColor = UIColor.yellow
                         break
+                    case "Green":
+                        textColor = UIColor.green
+                        break
                     default:
                         textColor = UIColor.white
                     }
@@ -102,6 +105,9 @@ class SwitchingViewController: UIViewController {
                     switch bkColor {
                     case "Red":
                         backgroungColor = UIColor.red
+                        break
+                    case "Blue":
+                        backgroungColor = UIColor.blue
                         break
                     default:
                         backgroungColor = UIColor.gray

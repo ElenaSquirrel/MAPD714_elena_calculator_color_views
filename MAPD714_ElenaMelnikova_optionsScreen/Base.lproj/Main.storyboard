@@ -406,14 +406,23 @@
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Yellow"/>
                                         <connections>
-                                            <action selector="menuAction:" destination="HWj-ws-h0l" eventType="touchUpInside" id="lqc-Aj-TcG"/>
+                                            <action selector="menuAction:" destination="HWj-ws-h0l" eventType="touchUpInside" id="Hnh-Uz-hTI"/>
                                             <action selector="menuItemsActions:" destination="HWj-ws-h0l" eventType="touchUpInside" id="X08-2d-Scp"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyt-b5-peW">
+                                        <rect key="frame" x="0.0" y="-70" width="375" height="0.0"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Green"/>
+                                        <connections>
+                                            <action selector="menuAction:" destination="HWj-ws-h0l" eventType="touchUpInside" id="nBt-ew-H4Y"/>
+                                            <action selector="menuItemsActions:" destination="HWj-ws-h0l" eventType="touchUpInside" id="xfc-lX-Efb"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vpI-Do-VwW">
-                                <rect key="frame" x="0.0" y="180" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="150" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gC-6j-HYE">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
@@ -430,7 +439,7 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOY-Jv-OwF">
-                                        <rect key="frame" x="0.0" y="-180" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="-150" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Gray"/>
                                         <connections>
@@ -439,12 +448,21 @@
                                         </connections>
                                     </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODg-qg-aNt">
-                                        <rect key="frame" x="0.0" y="-180" width="375" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="-150" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Red"/>
                                         <connections>
                                             <action selector="menuAction2:" destination="HWj-ws-h0l" eventType="touchUpInside" id="NPP-TS-iZV"/>
                                             <action selector="menuItemsActions2:" destination="HWj-ws-h0l" eventType="touchUpInside" id="62i-iw-gAX"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eZ-OS-4Vx">
+                                        <rect key="frame" x="0.0" y="-150" width="375" height="0.0"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Blue"/>
+                                        <connections>
+                                            <action selector="menuAction2:" destination="HWj-ws-h0l" eventType="touchUpInside" id="V8c-vr-6CY"/>
+                                            <action selector="menuItemsActions2:" destination="HWj-ws-h0l" eventType="touchUpInside" id="5v4-ya-qiO"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -453,7 +471,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="YOX-S2-ued" firstAttribute="trailing" secondItem="KHS-P8-Mbt" secondAttribute="trailing" id="9MO-uo-VdA"/>
-                            <constraint firstItem="vpI-Do-VwW" firstAttribute="top" secondItem="KHS-P8-Mbt" secondAttribute="bottom" constant="60" id="B32-6M-4C9"/>
+                            <constraint firstItem="vpI-Do-VwW" firstAttribute="top" secondItem="KHS-P8-Mbt" secondAttribute="bottom" constant="30" id="B32-6M-4C9"/>
                             <constraint firstItem="YOX-S2-ued" firstAttribute="trailing" secondItem="vpI-Do-VwW" secondAttribute="trailing" id="ZzD-xJ-vcM"/>
                             <constraint firstItem="KHS-P8-Mbt" firstAttribute="leading" secondItem="YOX-S2-ued" secondAttribute="leading" id="iJy-xk-pdn"/>
                             <constraint firstItem="KHS-P8-Mbt" firstAttribute="top" secondItem="YOX-S2-ued" secondAttribute="top" constant="50" id="mww-rU-gTN" userLabel="Stack View.top = Safe Area.top + 30"/>
@@ -468,6 +486,8 @@
                         <outletCollection property="menuItemsOutlets2" destination="ODg-qg-aNt" collectionClass="NSMutableArray" id="9Iy-eH-n7P"/>
                         <outletCollection property="menuItemsOutlets" destination="YQW-fu-2J5" collectionClass="NSMutableArray" id="s5l-sx-g3S"/>
                         <outletCollection property="menuItemsOutlets" destination="HOa-7U-uwP" collectionClass="NSMutableArray" id="Vxa-rc-LAV"/>
+                        <outletCollection property="menuItemsOutlets" destination="nyt-b5-peW" collectionClass="NSMutableArray" id="Yh8-6G-Jyb"/>
+                        <outletCollection property="menuItemsOutlets2" destination="7eZ-OS-4Vx" collectionClass="NSMutableArray" id="rYO-8s-BJ1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odW-DM-fC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
