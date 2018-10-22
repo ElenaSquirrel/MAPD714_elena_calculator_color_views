@@ -1,10 +1,22 @@
-//
+
 //  SwitchingViewController.swift
 //  MAPD714_ElenaMelnikova_optionsScreen
-//
+
+//  Basic Calculator with Options Screen version 1.1
+//  Program description:  Basic Calculator with Options Screen allows users to change background color and text color for the calculator. Pressing on the "Switch" toolbar on the top of the main screen changes Basic Calculator Screen on Options Screen that contains two dropdown menus that have color options for calculator background color and text color. After choosing colors users press "Switch" toolbar one more time and move to the Basic Calculator Screen.
 //  Created by Elena Melnikova on 2018-10-11.
+//  Student ID: 301025880
+//  Last modification date: 2018-10-21
+
+//  Version history:
+//  Calculator with Tab Bar Controller version 1.2
+//  Scientific Calculator and Options Screens added. Options Screen allows users to pick and change background color and text color for both Basic and Scientific Calculators.
+//  Basic Calculator with Options Screen version 1.1
+//  Options Screens were added.
+//  Basic Calculator version 1.0
+//  Basic Calculator and Splash Screen created.
+
 //  Copyright © 2018 Centennial College. All rights reserved.
-//
 
 import UIKit
 

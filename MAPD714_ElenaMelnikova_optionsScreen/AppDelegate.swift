@@ -1,10 +1,12 @@
-//
+
 //  AppDelegate.swift
 //  MAPD714_ElenaMelnikova_301025880
-//
-//  Created by Elena Melnikova on 2018-09-25.
+
+//  Basic Calculator with Options Screen version 1.1
+//  Created by Elena Melnikova on 2018-10-11.
+//  Student ID: 301025880
+//  Last modification date: 2018-10-21
 //  Copyright © 2018 Centennial College. All rights reserved.
-//
 
 import UIKit
 
@@ -16,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        sleep(1)  // splash screen delay for 1 seconds
+        sleep(1)  // splash screen delay for 1 second
         return true
     }
 
@@ -41,7 +43,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 

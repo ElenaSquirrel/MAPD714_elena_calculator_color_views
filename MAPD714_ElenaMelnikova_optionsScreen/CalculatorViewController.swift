@@ -1,10 +1,12 @@
-//
-//  ViewController.swift
+
+//  CalculatorViewController.swift
 //  MAPD714_ElenaMelnikova_301025880
-//  Calculator
-//  Created by Elena Melnikova on 2018-09-25.
+
+//  Basic Calculator with Options Screen version 1.1
+//  Created by Elena Melnikova on 2018-10-11.
+//  Student ID: 301025880
+//  Last modification date: 2018-10-21
 //  Copyright © 2018 Centennial College. All rights reserved.
-//
 
 import UIKit
 
