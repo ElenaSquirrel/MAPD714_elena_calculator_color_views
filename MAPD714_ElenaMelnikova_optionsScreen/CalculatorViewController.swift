@@ -8,13 +8,14 @@
 
 import UIKit
 
-
 class CalculatorViewController: UIViewController {
+    
+    //UILabel! with paddings that set in UILabelPaddind.swift
+    @IBOutlet weak var label: UILabelPadding!
     //Number displayed on screen
     
     var screenNumber:Double? = nil
     
-
     //Number displayed on screen before operation
     var previousNumber:Double? = nil
     
@@ -25,11 +26,6 @@ class CalculatorViewController: UIViewController {
     var performingMath = false
     
     var eql = false
-    
-    @IBOutlet weak var label:UILabelPadding! //UILabel! with paddings that set in UILabelPaddind.swift
-
- 
-
     
     //Normalize string to string
     
@@ -69,11 +65,7 @@ class CalculatorViewController: UIViewController {
         return normalize(input:str)
     }
     
-    
-    
     //Process number entered
-    
-    
     @IBAction func numberField(_ sender: UIButton) {
         eql = false
         //Do not allow enter second "." if "." already presents in the label
@@ -175,7 +167,6 @@ class CalculatorViewController: UIViewController {
     
     //Process operation entered
     @IBAction func operationsField(_ sender: UIButton) {
-        
         if sender.tag != 18 {
             eql = false
         }
@@ -199,6 +190,10 @@ class CalculatorViewController: UIViewController {
         
         if sender.tag != 18 && operation == 18 {
             previousNumber = nil;
+        }
+        
+        if screenNumber == nil {
+            screenNumber = 0
         }
         
         //"+/-" button clicked
@@ -238,7 +233,7 @@ class CalculatorViewController: UIViewController {
             //Update screenNumber
             screenNumber = dbl
             operation = sender.tag
-
+            
             //Set performanceMath flag
             performingMath = true
             
@@ -257,36 +252,36 @@ class CalculatorViewController: UIViewController {
                 operation = sender.tag
                 return
             }
-                let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
-                if res > 99999999 || res < -99999999 || (res > 0 && res < 0.000001) || (res < 0 && res > -0.000001 ) {
-                    //Set error
-                    previousNumber = nil
-                    screenNumber = nil
-                    label.text = "Overflow"
-                    performingMath = false
-                    return
-                }
-                //Normalize result
-                let str = normalize(input: res)
-                
-                //Normalize double
-                let dbl = Double(str)
-                //Update label
-                label.text = str
-            
-                //Update previousNumber
+            let res = oper(num1:previousNumber, num2:screenNumber, operation:operation!)
+            if res > 99999999 || res < -99999999 || (res > 0 && res < 0.000001) || (res < 0 && res > -0.000001 ) {
+                //Set error
                 previousNumber = nil
-                
-                //Update screenNumber
-                screenNumber = dbl
-                
-                //Update operation
-                operation = sender.tag
-                
-                //Set performanceMath flag
-                performingMath = true
+                screenNumber = nil
+                label.text = "Overflow"
+                performingMath = false
                 return
-        
+            }
+            //Normalize result
+            let str = normalize(input: res)
+            
+            //Normalize double
+            let dbl = Double(str)
+            //Update label
+            label.text = str
+            
+            //Update previousNumber
+            previousNumber = nil
+            
+            //Update screenNumber
+            screenNumber = dbl
+            
+            //Update operation
+            operation = sender.tag
+            
+            //Set performanceMath flag
+            performingMath = true
+            return
+            
         } else
         {
             if previousNumber == nil {
@@ -305,7 +300,9 @@ class CalculatorViewController: UIViewController {
                 label.text = "Overflow"
                 performingMath = false
                 return
-            }            //Normalize result
+            }
+            
+            //Normalize result
             var str = normalize(input: res)
             
             //Normalize double
@@ -319,7 +316,7 @@ class CalculatorViewController: UIViewController {
                 previousNumber = screenNumber
                 eql = true
             }
-    
+            
             //Update screenNumber
             screenNumber = dbl
             
@@ -342,7 +339,6 @@ class CalculatorViewController: UIViewController {
             return
         }
     }
-    
     func operationToLabel(tag:Int) -> String {
         switch tag {
         case 13:
@@ -364,7 +360,6 @@ class CalculatorViewController: UIViewController {
             return ""
         }
     }
-    
     
     func oper(num1: Double?, num2: Double?, operation:Int) -> Double {
         var res: Double = 0

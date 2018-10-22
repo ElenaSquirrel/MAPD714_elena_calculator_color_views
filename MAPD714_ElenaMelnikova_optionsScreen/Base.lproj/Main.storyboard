@@ -441,7 +441,7 @@
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOY-Jv-OwF">
                                         <rect key="frame" x="0.0" y="-150" width="375" height="0.0"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Gray"/>
+                                        <state key="normal" title="Dark Gray"/>
                                         <connections>
                                             <action selector="menuAction2:" destination="HWj-ws-h0l" eventType="touchUpInside" id="2tn-DR-Ywl"/>
                                             <action selector="menuItemsActions2:" destination="HWj-ws-h0l" eventType="touchUpInside" id="b4k-hU-Nhx"/>

@@ -24,17 +24,7 @@ class SwitchingViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func switchViews(sender: UIBarButtonItem) {
         // Create the new view controller, if required
         if optionsViewController?.view.superview == nil {
@@ -74,9 +64,9 @@ class SwitchingViewController: UIViewController {
     private func switchViewController(from fromVC:UIViewController?,
                      to toVC:UIViewController?) {
         var textColor = UIColor.white
-        var backgroungColor = UIColor.gray
+        var backgroungColor = UIColor.darkGray
         var tColor = "White"
-        var bkColor = "Gray"
+        var bkColor = "Dark Gray"
  
         if fromVC != nil {
             fromVC!.willMove(toParentViewController: nil)
@@ -110,7 +100,7 @@ class SwitchingViewController: UIViewController {
                         backgroungColor = UIColor.blue
                         break
                     default:
-                        backgroungColor = UIColor.gray
+                        backgroungColor = UIColor.darkGray
                     }
                 }
             }
